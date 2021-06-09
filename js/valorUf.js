@@ -1,3 +1,4 @@
+// Sacamos el valor de la UF mediante la API
 var valorUf = document.querySelector('#valorUf')
 function traer(){
     fetch('https://mindicador.cl/api/uf')
@@ -22,7 +23,7 @@ $(document).ready(function(){
     });
 });
 
-
+// Calcular el valor de UF a Pesos Chilenos
 $(document).ready(function(){
     $("#multiplicar").click(function(){
         var n1 = parseFloat($("#numUF").val());
