@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Servicios</title>
+</head>
+<body>
+    <div class="container" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light col-sm">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.pinimg.com/originals/9b/fb/78/9bfb7813b3b106ca365546d60e6524b4.png" alt="Logo compañia" width="250" height="60" class="logo d-inline-block img-fluid align-top">
+              </a>
+            <button 
+            	class="navbar-toggler align-items-center" 
+            	type="button" 
+            	data-bs-toggle="collapse" 
+            	data-bs-target="#toggleMobileMenu" 
+            	aria-controls="toggleMobileMenu" 
+            	aria-expanded="false" 
+            	aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto text-center me-5">
+                    <li>
+                        <a class="nav-link me-4" href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="nav-link me-4" href="quienes.html">Quienes</a>
+                    </li>
+                    <li>
+                        <a class="nav-link me-4" href="servicios.html">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="nav-link  me-4" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container col-sm" id="tabla">
+        <h2>Valores en UF</h2>
+        <table class="table table-striped">
+            <tr>
+                <th scope="row"><h3>Servicios</h3></th>
+                <th><h3>PYME</h3></th>
+                <th><h3>CORP</h3></th>
+            </tr>
+            <tr>
+                <th><h4>Trainee</h4></td>
+                <td><h5>22 UF</h5></td>
+                <td><h5>20 UF</h5></td>
+            </tr>
+            <tr>
+                <th><h4>Professional</h4></td>
+                <td><h5>30 UF</h5></td>
+                <td><h5>35 UF</h5></td>
+            </tr>
+            <tr>
+                <th><h4>Premium</h4></td>
+                <td><h5>40 UF</h5></td>
+                <td><h5>55 UF</h5></td>
+            </tr>
+            <tr>
+                <th><h4>Gold</h4></td>
+                <td><h5>70 UF</h5></td>
+                <td><h5>85 UF</h5></td>
+            </tr>
+        </table>
+        <table class="col-sm-12 col-lg-12" id="valorUf">
+            
+        </table>
+    </div>
+    <br>
+    <div class="container" id="conversor">
+        <div class="boton">
+            <button class="btn" id="convertir" onclick="traer()">Convertir</button>
+        </div>
+    </div>
+    <br>
+    <div class="container col-sm" id="tabla2">
+        <h2>Valores en Pesos Chilenos</h2>
+        <div class="row">
+            <form>
+                <div class="form-group col-lg-4">
+                    <label for="numUF">Cantidad de UF:</label>
+                    <input type="number" class="form-control" id="numUF" name="numUF">
+                </div>
+                <div class="form-group col-lg-4">
+                    <label for="numUF">Valor de la UF:</label>
+                    <input type="number" class="form-control" id="valorUF" name="valorUF">
+                </div>
+
+                <button type="button" class="btn" id="multiplicar">Calcular</button>
+
+                <div class="form-group col-lg-4">
+                    <label for="numUF">Valor en Pesos Chilenos es:</label>
+                    <input type="number" class="form-control" id="resultado" name="resultado">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="footer">© 2021 DuocUC. Todos los derechos reservados.</div>
+    <script src="js/valorUf.js"></script>
+</body>
+</html>
